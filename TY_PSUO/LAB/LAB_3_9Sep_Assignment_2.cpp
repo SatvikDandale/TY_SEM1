@@ -78,6 +78,7 @@ class matrix{
             
             // Iterate on each element (a[row][column]) and if non zero found, add that to compact matrix
             for(int i=0; i < d; i++){
+                d
                 
             }
         }
