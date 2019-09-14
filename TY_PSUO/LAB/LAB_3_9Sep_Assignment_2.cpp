@@ -77,10 +77,20 @@ class matrix{
                 compact[i] = new int[nonzero];  // No of rows = no of nonzero elements.
             
             // Iterate on each element (a[row][column]) and if non zero found, add that to compact matrix
+            int temp_count = 0;
             for(int i=0; i < d; i++){
-                d
-                
-            }
+                for(int j=0; j < d; j++){
+                    if(m[i][j] != 0){
+                        compact[0][temp_count] = i; //ROW
+                        compact[1][temp_count] = j; //COLUMN
+                        compact[2][temp_count] = a[i][j];   //VALUE
+                        temp_count++;
+                    }
+                }
+            }   // Temporary compact matrix is created.
+            if (validSparse)
+                a = compact;
+
         }
 
         matrix operator+(matrix m);
