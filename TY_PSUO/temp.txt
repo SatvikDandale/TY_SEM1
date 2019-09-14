@@ -1,4 +1,0 @@
-Server: 54.186.197.5:8000
-
-username: admin
-password: password
