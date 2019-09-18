@@ -93,7 +93,6 @@ class matrix{
 
         }
 
-        matrix operator+(matrix m);
         matrix operator-(matrix m);
 
         bool isSparse(){
