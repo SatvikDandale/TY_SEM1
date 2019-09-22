@@ -21,8 +21,6 @@ class Demo{
         
         inline int get_Max(){   // This function is inline so the control won't jump to this code block.
         // Instead, the following statements will get copied to the point where this function was called.
-            cout<<"LOCATION OF THE STATEMENTS INSIDE THE FUNCION get_max is inside the function: ";
-            cout<<typeid(*this).name();
             return (a > b)?  a: b;
         }
 };
