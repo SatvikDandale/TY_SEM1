@@ -54,7 +54,7 @@ public:
 };
 
 int main(){
-	// ASSINGING AN IN-BUILT DATA TYPE, say 'int', TO AN CLASS OBJECT
+	// ASSINGING AN IN-BUILT DATA TYPE, say 'int', TO A CLASS OBJECT
 	Demo d;
 	d = 2;
 	cout<<d.getB();
