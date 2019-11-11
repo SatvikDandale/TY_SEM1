@@ -107,6 +107,6 @@ int main(){
     v.add('a');
     v.add('c');
     v.add('b');
-    v.del(2);
+    v.modify(1, 'd');
     v.display();
 }
