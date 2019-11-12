@@ -86,7 +86,7 @@ class HuffmanEncoding:
         # If not, add remaining zeros(0s) at the end and keep count of it.
         
         self.extraZerosAtEnd = self.lenBinary % 8
-        for i in range(self.extraZerosAtEnd):
+        for _ in range(self.extraZerosAtEnd):
             self.binaryString += "0"    # Adding necessary zeroes at the end.
 
     def __init__(self, text):
