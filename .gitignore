@@ -1,4 +1,4 @@
 .autogit
-*/*.out
+*/a.out
 TY_PSUO/practice.cpp
 TY_PSUO/test.cpp
