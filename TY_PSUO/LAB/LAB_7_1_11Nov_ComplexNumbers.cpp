@@ -87,21 +87,33 @@ int main(){
     
     // Creating two different Complex Numbers
     Complex *c1 = new Complex(1, 22);
-    Complex *c2;
-
-    // Getter
-    cout<<"c1 is: "<<c1->getReal()<<" + "<<c1->getImg()<<"i\n";
+    Complex *c2; // Getter
+    cout<<"c1 is (using getters): "<<c1->getReal()<<" + "<<c1->getImg()<<"i\n";
 
     // Setter
     c1->setImg(4.5);
 
-    cout<<"c1 now is: ";
+    cout<<"c1 now is (using setters): ";
     c1->display();
     cout<<endl;
 
     // Copy Constructor
     c2 = new Complex(*c1);
-    cout<<"c2 after copying from c1 is: ";
+    cout<<"c2 after copying from c1 is (using copy constructor and display function): ";
+    c2->display();
+    cout<<endl;
+    cout<<"c1 is (using getters): "<<c1->getReal()<<" + "<<c1->getImg()<<"i\n";
+
+    // Setter
+    c1->setImg(4.5);
+
+    cout<<"c1 now is (using setters): ";
+    c1->display();
+    cout<<endl;
+
+    // Copy Constructor
+    c2 = new Complex(*c1);
+    cout<<"c2 after copying from c1 is (using copy constructor and display function): ";
     c2->display();
     cout<<endl;
 }

@@ -168,8 +168,20 @@ int main(){
     
     ExtendedComplex *c1 = new ExtendedComplex(1, 4);
     ExtendedComplex *c2 = new ExtendedComplex(2, 8);
-    ExtendedComplex *c3 = c1->multiply_complex(*c2);
+    ExtendedComplex *c3 = c1->add_complex(*c2);
+    ExtendedComplex *c4 = c1->sub_complex(*c2);
+    ExtendedComplex *c5 = c1->multiply_complex(*c2);
+    
+    cout<<"\"c1\" is: ";
+    c1->display();
+    cout<<endl<<"\"c2\" is: ";
+    c2->display();
+    cout<<endl<<"\"c3\": c1 + c2 is (c1.add_complex(c2)) : ";
     c3->display();
-    cout<<endl<<ExtendedComplex::get_count();
+    cout<<endl<<"\"c4\": c1 - c2 is (c1.sub_complex(c2)) : ";
+    c4->display();
+    cout<<endl<<"\"c5\": c1 * c2 is (c1.multiple_complex(c2)) : ";
+    c5->display();
+    cout<<endl<<"Total Complex number objects formed are: "<<ExtendedComplex::get_count()<<endl;
 
 }

@@ -235,7 +235,20 @@ int main(){
     overloadedComplex *c1 = new overloadedComplex(1, 4);
     overloadedComplex *c2 = new overloadedComplex(2, 8);
 
-    overloadedComplex *c3 = new overloadedComplex(*c1 * *c2);
+    overloadedComplex *c3 = new overloadedComplex(*c1 + *c2);
+    overloadedComplex *c4 = new overloadedComplex(*c1 - *c2);
+    overloadedComplex *c5 = new overloadedComplex(*c1 * *c2);
+
+    cout<<"\"c1\" is: ";
+    c1->display();
+    cout<<endl<<"\"c2\" is: ";
+    c2->display();
+    cout<<endl<<"\"c3\": c1 + c2 is (c1.operator+(c2)) : ";
     c3->display();
+    cout<<endl<<"\"c4\": c1 - c2 is (c1.operator-(c2)) : ";
+    c4->display();
+    cout<<endl<<"\"c5\": c1 * c2 is (c1.operator*(c2)) : ";
+    c5->display();
+    cout<<endl;
 
 }
