@@ -1,15 +1,13 @@
 /*
-    Write a program to extend complex class with following details:
-    Public: 
-            add_complex()
-            subtract_complex()
-            multiply_complex()
-            print_complex()
-            getcount_complex() 
-            (Use of member functions and static variable)
+    	Write a program to extend complex class with following details:
+        Public:
+            Operator functions for +, - , multiply
+            Print complex numbers.
+            (Operator overloading using member and non-member functions)
 */
 #include<bits/stdc++.h>
 using namespace std;
+
 
 class Complex{
     private:
@@ -164,12 +162,80 @@ class ExtendedComplex: public Complex{
 };
 int ExtendedComplex::count = 0;
 
+class overloadedComplex: public ExtendedComplex{
+    public:
+        // Constructors
+        overloadedComplex():ExtendedComplex(){}
+
+        overloadedComplex(double single):ExtendedComplex(single){}
+
+        overloadedComplex(int single):ExtendedComplex(single){}
+        
+        overloadedComplex(double real_value, double img_value):ExtendedComplex(real_value, img_value){}
+
+        overloadedComplex(int real_value, double img_value):ExtendedComplex(real_value, img_value){}
+
+        overloadedComplex(double real_value, int img_value):ExtendedComplex(real_value, img_value){}
+
+        overloadedComplex(int real_value, int img_value):ExtendedComplex(real_value, img_value){}
+
+        // Copy Constructors
+        overloadedComplex(overloadedComplex &c):ExtendedComplex(c.getReal(), c.getImg()){
+            // This constructor will take overloadedComplex object and will pass the two values to the parameterized constructor of ExtendedComplex class.
+        }
+        
+        overloadedComplex(ExtendedComplex &c):ExtendedComplex(c){}
+
+        overloadedComplex(Complex &c):ExtendedComplex(c){}
+
+        // operator+
+        overloadedComplex& operator+(overloadedComplex &c) {
+            // There are two numbers
+            // this and c
+            overloadedComplex *temp = new overloadedComplex();
+            temp->setReal(this->getReal() + c.getReal());
+            temp->setImg(this->getImg() + c.getImg());
+            return *temp;
+            
+        }
+
+        // operator-
+        overloadedComplex& operator-(overloadedComplex &c) {
+            // There are two numbers
+            // this and c
+            overloadedComplex *temp = new overloadedComplex();
+            temp->setReal(this->getReal() - c.getReal());
+            temp->setImg(this->getImg() - c.getImg());
+            return *temp;
+            
+        }
+
+        // operator*
+        overloadedComplex& operator*(overloadedComplex &c) {
+            /*
+                this.r + (this.img)i   REAL: this.r     IMG: this.img
+                c2.r + (c2.img)i   REAL: c2.r     IMG: c2.img
+                RESULT:
+                        REAL: this.r * c2.r - this.img * c2.img
+                        IMG:  this.r * c2.img + this.img * c2.r
+            */
+            overloadedComplex *temp = new overloadedComplex();
+
+            double real = (this->getReal() * c.getReal()) - (this->getImg() * c.getImg());
+            double img = (this->getReal() * c.getImg()) + (this->getImg() * c.getReal());
+
+            temp->setReal(real);
+            temp->setImg(img);
+            return *temp;
+            
+        }
+};
+
 int main(){
-    
-    ExtendedComplex *c1 = new ExtendedComplex(1, 4);
-    ExtendedComplex *c2 = new ExtendedComplex(2, 8);
-    ExtendedComplex *c3 = c1->multiply_complex(*c2);
+    overloadedComplex *c1 = new overloadedComplex(1, 4);
+    overloadedComplex *c2 = new overloadedComplex(2, 8);
+
+    overloadedComplex *c3 = new overloadedComplex(*c1 * *c2);
     c3->display();
-    cout<<endl<<ExtendedComplex::get_count();
 
 }
