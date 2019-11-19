@@ -1,3 +1,5 @@
+import json
+
 class node:
     # This is just a structure
     def __init__(self):
@@ -73,30 +75,39 @@ class HuffmanEncoding:
             # The node with lower frequency should come first
             node_list = sorted(node_list,  key = self.getKey)   
         
-    def convertTextToBinary(self, text, charDict):
+    def convertTextToBinary(self, text):
         # This function will iterate over the text and for each character visited, the character will be replaced by its corresponding binary code
         self.binaryString = ""
         self.lenBinary = 0  # To store the length of binary string. (Verifying for multiple of 8)
         for char in text:
-            self.lenBinary += 1
+            self.lenBinary += len(self.charCodes[char])
             # For each character
             self.binaryString += str(self.charCodes[char]) # Adding each bit code to the binary stream
         # Aftet this loop, the entire text is converted into a string of binary numbers.
         # Make sure that the length of this binary string is a multiple of "8". (BYTE ADDRESSABLE MEMORY)
         # If not, add remaining zeros(0s) at the end and keep count of it.
         
-        self.extraZerosAtEnd = self.lenBinary % 8
+        self.extraZerosAtEnd = 8 - self.lenBinary % 8
         for _ in range(self.extraZerosAtEnd):
             self.binaryString += "0"    # Adding necessary zeroes at the end.
+
+    def customEncoding(self):
+        self.dividedBinary = [] # This will store binary values which are divided in 8 digits
+        self.finalString = ""   # Final Encoded String
+
+        for i in range(0, len(self.binaryString), 8):
+            temp = self.binaryString[i:i+8]
+            self.dividedBinary.append(temp)
+            ascii = int(temp, 2)
+            self.finalString += chr(ascii)
+
 
     def __init__(self, text):
         self.charDict = self.createDict(text)
         self.createTree()
         self.saveDict(self.root, "")
-        self.convertTextToBinary(text, self.charDict)
-
-        print(self.binaryString)
-        print(self.extraZerosAtEnd)
+        self.convertTextToBinary(text)
+        self.customEncoding()
 
 
 def main():
@@ -113,9 +124,15 @@ def main():
 
     h = HuffmanEncoding(text)
     # This object "h" has the encoded version of the given text with the huffman tree, char: freq pairs and char: huffman bit code pairs stored. Save the charCodes dictionary in a JSON file.
-    import json
+    
+    with open('compressed.dat', 'w') as file:
+        file.write(str(h.extraZerosAtEnd))
+        file.write(h.finalString)
+    
     with open('metadata.json', 'w') as file:
-        json.dump(h.charCodes, file, indent = 2)
+        json.dump(h.charDict, file, indent = 2)
+
+    print(h.binaryString[:len(h.binaryString)-h.extraZerosAtEnd])
 
 if __name__ == '__main__':
     main()
