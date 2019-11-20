@@ -2,6 +2,8 @@
 
 This website is made on top of the GitHUb repository named, **TY_SEM1**, owned by SatvikDandale.
 
+Note: This repository is still under development! 
+
 ## Highlights of the repository:
 1. Almost all the topics covered in the subject **_Problem Solving using OOP_** and **_Design and Analysis of Algorithms_** are implemented.
 2. Codes are written with good documentation.
