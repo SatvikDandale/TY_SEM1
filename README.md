@@ -9,9 +9,9 @@ This website is made on top of the GitHUb repository named, **TY_SEM1**, owned b
 
 ## Jump right into the stuff you need:
 
-### [**_Syllabus for VIT-Comp-TY (2019-20)_**](https://drive.google.com/file/d/1Gh_lBxBlnudCT7dSNBIcVSqxTG59125i/view?usp=drivesdk)
-### [**_Design and Analysis of Algorithms (DAA)_**](https://github.com/SatvikDandale/TY_SEM1/tree/master/TY_DAA)
-### [**_Problem Solving using OOP(PSUO)_**](https://github.com/SatvikDandale/TY_SEM1/tree/master/TY_PSUO)
+### [**Syllabus for VIT-Comp-TY (2019-20)**](https://drive.google.com/file/d/1Gh_lBxBlnudCT7dSNBIcVSqxTG59125i/view?usp=drivesdk)
+### [**Design and Analysis of Algorithms (DAA)**](https://github.com/SatvikDandale/TY_SEM1/tree/master/TY_DAA)
+### [**Problem Solving using OOP(PSUO)**](https://github.com/SatvikDandale/TY_SEM1/tree/master/TY_PSUO)
 
 
 ## Support or Contact
