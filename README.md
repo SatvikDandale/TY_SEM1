@@ -19,12 +19,3 @@ This website is made on top of the GitHUb repository named, **TY_SEM1**, owned b
 Having trouble with this page? Have any doubt or any suggestions on the repository?
 
 Here is my [LinkedIn](https://www.linkedin.com/in/satvik-dandale/). Feel free to ping me 😁️
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SatvikDandale/TY_SEM1/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-
