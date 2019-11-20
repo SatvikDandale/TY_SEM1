@@ -7,6 +7,14 @@ This website is made on top of the GitHUb repository named, **TY_SEM1**, owned b
 2. Codes are writting with good documentation.
 3. Course Projects alloted to SatvikDandale for those subjects are also available.
 
+## Jump right into the stuff you need:
+
+### [**_Syllabus for VIT-Comp-TY (2019-20)_**](https://drive.google.com/file/d/1Gh_lBxBlnudCT7dSNBIcVSqxTG59125i/view?usp=drivesdk)
+### [**_Design and Analysis of Algorithms (DAA)_**](https://github.com/SatvikDandale/TY_SEM1/tree/master/TY_DAA)
+### [**_Problem Solving using OOP(PSUO)_**](https://github.com/SatvikDandale/TY_SEM1/tree/master/TY_PSUO)
+
+
+
 [Link](url) and ![Image](src)
 ```
 
