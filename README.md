@@ -1,19 +1,11 @@
-## Welcome to GitHub Pages
+## Welcome to the GitHub page for VIT-COMP(2021) TY-SEM1
 
-You can use the [editor on GitHub](https://github.com/SatvikDandale/TY_SEM1/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This website is made on top of the GitHUb repository named, **TY_SEM1**, owned by SatvikDandale.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
+## Highlights of the repository:
+1. Almost all the topics covered in the subject _Problem Solving using OOP_ and _Design and Analysis of Algorithms_ are implemented.
+2. Codes are writting with good documentation.
+3. Course Projects alloted to SatvikDandale for those subjects are also available.
 
 - Bulleted
 - List
