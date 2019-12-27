@@ -1,0 +1,12 @@
+BookId           Book Name         Book AuthorBook Price
+     0                                                 0
+     0                                                 0
+     0                                                 0
+     0                                                 0
+     0                                                 0
+     0                                                 0
+     7               Book7             Author7        71
+     0                                                 0
+     0                                                 0
+     0                                                 0
+     0                                                 0
