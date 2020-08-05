@@ -1,8 +1,6 @@
 ## Welcome to the GitHub page for VIT-COMP(2021) TY-SEM1
 
-This website is made on top of the GitHub repository named, **TY_SEM1**, owned by SatvikDandale.
-
-Note: This repository is still under development! 
+This website is made on top of the GitHub repository named, **TY_SEM1**, owned by SatvikDandale. 
 
 ## Highlights of the repository:
 1. Almost all the topics covered in the subject **_Problem Solving using OOP_** and **_Design and Analysis of Algorithms_** are implemented.
