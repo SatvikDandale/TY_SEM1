@@ -1,6 +1,6 @@
 ## Welcome to the GitHub page for VIT-COMP(2021) TY-SEM1
 
-This website is made on top of the GitHUb repository named, **TY_SEM1**, owned by SatvikDandale.
+This website is made on top of the GitHub repository named, **TY_SEM1**, owned by SatvikDandale.
 
 Note: This repository is still under development! 
 
